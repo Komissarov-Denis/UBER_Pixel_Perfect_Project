@@ -1,0 +1,477 @@
+.header
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 50px
+	background: rgba(0, 0, 0, 0.77)
+	position: sticky
+	top: 0
+	&_nav
+		&_menu
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-left: 0
+			margin-bottom: 0
+			list-style-type: none
+			&_item
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 100%
+				border-right: 2px dotted $black_color
+				&:last-child    
+					border-right: none
+				&_link          
+					font-weight: 300
+					font-size: 15px
+					color: $white_color
+					text-decoration: none
+					&:hover
+						text-decoration: underline
+						color: $blue_color
+		&_block				
+			&_hamburger
+				display: none      
+
+.promo
+	min-height: 800px
+	background-image: url('../img/header/uber_bg.jpg') 
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+	&_header
+		display: flex
+		flex-direction: column
+		justify-content: center
+		min-height: 84px
+		background: rgba(0, 0, 0, 0.6)
+		.row
+		&_block_logo 
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			&_img
+				img
+					width: 100%
+			&_official_text
+				color: rgba(255, 255, 255, 0.5)
+				font-size: 13px
+				font-weight: 400
+		&_block_call
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			&_text
+				color: $white_color
+				font-size: 13px
+				font-weight: normal
+				line-height: 26px
+				text-align: right
+			&_phone
+				color: $white_color
+				font-size: 22px
+				font-weight: 400
+				text-align: right
+				line-height: 26px
+				text-decoration: none
+		&_block_button		
+			display: flex
+			flex-direction: column
+			justify-content: center
+			.xs-visible
+				display: none  
+			&_btn
+				width: 172px
+				height: 50px
+				box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+				border-radius: 4px
+				background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
+				color: $white_color
+				text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+				font-size: 14px
+				font-weight: 400
+				text-transform: uppercase
+				+btn_hover				
+	.row
+	.box
+		display: flex
+		flex-direction: column
+		justify-content: space-evenly	
+		padding-top: 30px
+	&_block
+		display: flex
+		flex-direction: column
+		justify-content: space-evenly		
+		min-height: 716px			      
+		&_subheader1
+			font-size: 60px
+			font-weight: 700
+			text-align: center
+			text-transform: uppercase
+			color: $white_color
+			line-height: 60px
+		&_subheader2
+			font-size: 36px
+			text-align: center
+			text-transform: uppercase
+			color: $white_color
+			line-height: 36px
+		&_subheader_description
+			font-weight: 400
+			font-size: 18px
+			text-align: center
+			color: $white_color
+		&_btn
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 240px
+			&_button
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 260px
+				height: 64px
+				background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
+				box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+				border-radius: 4px
+				font-weight: 400
+				font-size: 18px
+				color: $white_color
+				text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+				+btn_hover
+
+.reasons
+	min-height: 908px
+	padding: 48px 0 48px 0
+	&_divider
+		@include divider_black    
+	&_header
+		@include header_black
+	.row
+		margin: 34px auto 0 auto
+		min-height: 644px
+		display: flex
+		justify-content: space-between
+		align-content: space-between
+	&_block
+		display: flex
+		justify-content: space-evenly
+		align-items: center
+		&_ellipse
+			width: 116px
+			height: 116px
+			margin-top: 20px
+			border-radius: 58px
+			background: $blue_color
+			display: flex
+			justify-content: center
+			align-items: center
+		&_description
+			width: 480px
+			margin-top: 20px
+			font-weight: 400
+			font-size: 18px
+			line-height: 21px
+			align-self: baseline
+			span
+				color: $blue_color
+
+.application
+	padding: 48px 0 80px 0
+	&_divider
+		@include divider_black
+	&_header
+		@include header_black
+	&_header_description
+		@include header_description_black
+	.row
+		margin: 34px auto 0 auto
+		min-height: 670px
+		display: flex
+		justify-content: space-between
+		align-content: space-between
+	&_card
+		display: flex
+		justify-content: space-around
+		&_order
+			background-image: url('../img/application/order.jpg')
+			@include application_card_property
+			&_btn
+				@include application_btn 
+		&_reliable_service
+			background-image: url('../img/application/reliable_service.jpg')
+			@include application_card_property 
+			&_btn
+				@include application_btn  
+		&_prices
+			background-image: url('../img/application/prices.jpg')
+			@include application_card_property 
+			&_btn
+				@include application_btn
+		&_cashless_payment
+			background-image: url('../img/application/cashless_payment.jpg')
+			@include application_card_property 
+			&_btn
+				@include application_btn
+		&_feedback
+			background-image: url('../img/application/feedback.jpg')
+			@include application_card_property 
+			&_btn
+				@include application_btn
+		&_divider_cost
+			background-image: url('../img/application/divide_cost.jpg')
+			@include application_card_property 
+			&_btn
+				@include application_btn
+		&_description
+			min-height: 62px
+			padding: 0 10px 0 10px
+			font-weight: 400
+			font-size: 24px
+			line-height: 31px
+			text-align: center
+			text-transform: uppercase
+			color: $white_color		 
+
+.choice
+	min-height: 900px
+	padding: 48px 0 48px 0
+	background-image: url('../img/choice/dark_background.jpg')
+	background-size: 100% 63%
+	background-position: center top
+	background-repeat: no-repeat
+	&_divider
+		@include divider_white
+	&_header
+		@include header_white
+	&_header_description 
+		@include header_description_white
+	.row
+		display: flex
+		justify-content: center
+		margin-top: 60px
+	&_car
+		display: flex
+		justify-content: center
+		&_img
+			width: 100%
+	&_footer_description
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		text-align: center
+		color: $semi_black_color
+
+.conditions
+	padding: 48px 0 48px 0	
+	&_divider
+		@include divider_black
+	&_header
+		@include header_black 
+	.row
+		display: flex
+		justify-content: space-evenly
+		align-content: space-evenly
+		min-height: 680px
+	&_block
+		&_blue
+			font-weight: 400
+			font-size: 22px
+			line-height: 21px
+			color: $blue_color
+		&_description
+			margin: 16px 0 0 0
+			font-weight: 300
+			font-size: 17px
+			line-height: 21px
+			color: $blue_color
+		&_red
+			font-weight: 400
+			font-size: 22px
+			line-height: 21px
+			color: rgb(255, 86, 86)
+		&_list_blue           
+			margin: 0
+			padding-left: 49px 
+			list-style-type: none
+			li
+				position: relative
+				font-weight: 300
+				font-size: 17px
+				line-height: 21px
+				margin-top: 13px
+				color: $semi_black_color
+				&:before
+					content: ""
+					display: block  
+					position: absolute
+					left: -32px
+					top: 2px            
+					width: 21px
+					height: 20px
+					background: url("../icons/conditions/check_blue.png")        
+		&_list_red
+			margin: 0       
+			padding-left: 49px 
+			list-style-type: none
+			li
+				position: relative
+				font-weight: 300
+				font-size: 17px
+				line-height: 21px
+				margin-top: 13px
+				color: $semi_black_color
+				&:before
+					content: ""
+					display: block  
+					position: absolute
+					left: -32px
+					top: 2px            
+					width: 21px
+					height: 20px
+					background: url("../icons/conditions/check_red.png") 
+
+.world
+	display: flex
+	justify-content: center
+	background-image: url("../img/world/world_bg.png")  
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+	padding: 50px 0 50px 0
+	&_divider
+		@include divider_white 
+	&_header
+		@include header_white
+	&_header_description 
+		@include header_description_white    
+	&_link_container
+		display: flex
+		justify-content: center
+		margin-top: 485px
+	&_link
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+		font-size: 15px
+		line-height: 68px
+		color: $blue_color
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+			color: $white_color
+
+.footer
+	min-height: 156px
+	padding: 24px 0 24px 0
+	line-height: normal
+	.row
+		display: flex
+		justify-content: space-between   
+		align-content: center              
+	&_icon_wrapper_large
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&_square
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 38px
+			height: 38px
+			background: rgb(7, 7, 22)
+			border-radius: 20px    
+			&:hover
+				background: $blue_color 
+			&_img
+				display: flex
+	&_list_wrapper
+		display: flex
+		flex-direction: column
+		align-items: center    
+		&_divider
+			width: 70%
+			height: 7px
+			margin: 0 auto
+			background: $blue_color    
+		&_ul1
+			margin-top: 28px    
+			width: 100%  
+			&_menu
+				display: flex
+				flex-direction: row
+				justify-content: center
+				padding: 0
+				margin: 0        
+				list-style: none
+				&_item
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					&_link
+						display: flex		
+						text-align: center	
+						text-decoration: none
+						font-weight: 400
+						font-size: 18px
+						text-transform: uppercase
+						color: rgb(7, 7, 22)
+						&:hover
+							text-decoration: underline
+							color: $blue_color      
+		&_ul2
+			margin-top: 10px  
+			width: 100%     
+			&_menu
+				display: flex
+				flex-direction: row
+				padding: 0
+				margin: 0        
+				list-style: none        
+				&_item
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%          
+					&_link
+						display: flex		
+						text-align: center				
+						text-decoration: none
+						font-weight: 500
+						font-size: 15px
+						text-transform: uppercase
+						color: rgb(153, 153, 153)
+						&:hover
+							text-decoration: underline
+							color: $blue_color
+		&_language_link
+			margin-top: 12px            
+			display: flex
+			justify-content: center
+			text-decoration: none
+			font-weight: 500
+			font-size: 13px
+			width: 100%
+			text-transform: uppercase
+			color: $blue_color
+			&:hover
+				text-decoration: underline
+				color: $black_color 		       
+	&_icon_wrapper_small 
+		display: none      					        
+	&_link_wrapper
+		display: flex
+		justify-content: space-between
+		&_block
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&_link
+				display: flex
+				justify-content: space-between
+				align-items: center
+				&_img
+					width: 100% 			

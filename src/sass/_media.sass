@@ -1,0 +1,465 @@
+@media (max-width: 1920px)
+	.header
+		&_nav
+			&_menu
+				&_item
+					&_link 
+						font-size: $font-size_15-12
+
+	.promo
+		min-height: $height_800-500
+		&_header
+			min-height: 84px
+			.row
+			&_block_logo 
+				&_img
+					img
+						width: 100%
+				&_official_text
+					font-size: $font-size_13-12
+			&_block_call
+				&_text
+					font-size: $font-size_13-12
+				&_phone
+					font-size: $font-size_22-21
+			&_block_button		
+				&_btn
+					width: $width_172-140
+					font-size: $font-size_14-12
+		.row
+		.box	
+		&_block
+			min-height: $height_716-416	
+			&_subheader1
+				font-size: $font-size_60-32
+				line-height: $line-height_60-40
+			&_subheader2
+				font-size: $font-size_36-20
+				line-height: $line-height_36-24
+			&_subheader_description
+				font-size: $font-size_18-13
+			&_btn
+				height: $height_240-120
+				&_button
+					width: $width_260-190
+					height: $height_64-50
+					font-size: $font-size_18-13
+
+	.reasons
+		&_header
+			font-size: $font-size_36-20
+			margin-top: $height_45-22
+		.row
+			margin: 34px auto 0 auto
+			min-height: 644px
+		&_block
+			&_ellipse
+				width: $width_116-86
+				height: $height_116-50
+			&_description
+				width: $width_480-270
+				font-weight: 400
+				font-size: $font-size_18-13
+				line-height: $line-height_21-17
+
+	.application
+		&_header
+			font-size: $font-size_36-20
+			margin-top: $height_45-22
+		&_header_description
+			font-size: $font-size_18-13
+		.row
+		&_card
+			&_description
+				font-size: $font-size_24-16
+
+	.choice
+		min-height: $height_900-503
+		&_header
+			font-size: $font-size_36-20
+			margin-top: $height_45-22
+		&_header_description 
+			font-size: $font-size_18-13
+		.row
+		&_footer_description
+			font-size: $font-size_18-13
+
+	.conditions
+		&_header
+			font-size: $font-size_36-20
+			margin-top: $height_45-22
+		.row
+		&_block
+			&_blue
+				font-size: $font-size_22-16
+				line-height: $line-height_21-17
+			&_description
+				margin: 16px 0 0 0
+				font-size: $font-size_18-13
+				line-height: $line-height_21-17
+			&_red
+				font-size: $font-size_22-16
+				line-height: $line-height_21-17
+			&_list_blue           
+				margin: 0
+				padding-left: 49px
+				li
+					font-size: $font-size_18-13
+					line-height: $line-height_21-17
+					margin-top: 13px
+					&:before
+						content: ""
+						display: block  
+						position: absolute
+						left: -32px
+						top: 2px            
+						width: 21px
+						height: 20px        
+			&_list_red
+				margin: 0       
+				padding-left: 49px 
+				list-style-type: none
+				li
+					font-size: $font-size_18-13
+					line-height: $line-height_21-17
+					margin-top: 13px
+					&:before
+						content: ""
+						display: block  
+						position: absolute
+						left: -32px
+						top: 2px            
+						width: 21px
+						height: 20px	
+
+	.world
+		&_header
+			font-size: $font-size_36-20
+			margin-top: $height_45-22
+		&_header_description 
+			font-size: $font-size_18-13   
+		&_link_container
+			margin-top: $height_485-120
+		&_link
+			font-size: $font-size_14-12
+			line-height: 68px	
+
+	.footer
+		.row
+		&_list_wrapper
+			&_divider
+				width: 70%
+			&_ul1
+				width: 100%  
+				&_menu
+					&_item
+						width: 100%
+						&_link
+							font-size: $font-size_18-11
+			&_ul2 
+				width: 100%     
+				&_menu
+					&_item
+						width: 100%          
+						&_link
+							font-size: $font-size_15-9
+			&_language_link
+				font-size: $font-size_13-10
+				width: 100% 					        
+		&_link_wrapper
+			&_block
+				&_link
+					&_img
+						width: 100% 			
+
+
+@media (max-width: 1399.98px)
+
+	.application
+		.row
+			min-height: 610px    
+
+	.footer
+		.row
+		&_list_wrapper
+			&_divider
+				width: 70%
+			&_ul1 
+				width: 100%  
+				&_menu
+					&_item
+						width: 100%
+			&_ul2
+				width: 100%     
+				&_menu
+					&_item
+						width: 100% 
+			&_language_link
+				width: 100%				        
+		&_link_wrapper
+			&_block
+				&_link
+					&_img
+						width: 94% 			
+				
+
+@media (max-width: 1199.98px)
+
+	.application
+		.row
+			min-height: 1100px 
+
+@media (max-width: 991.98px)    
+
+	.header
+		&_nav
+			&_menu
+				position: fixed
+				flex-direction: column
+				justify-content: space-evenly
+				top: 0
+				left: -100%
+				width: 50%
+				height: 100vh    
+				padding: 20px 15px
+				background: rgba(0, 0, 0, 0.77)
+				transition: 0.6s all
+				&_active
+					left: 0            
+				&_item
+					border-right: none
+					padding: 0 
+					&_link
+						font-size: $font-size_24-18
+						text-align: center
+			&_block	
+				display: flex				
+				justify-content: flex-end
+				align-items: center
+				padding-top: 16px								
+				&_hamburger
+					display: flex
+					flex-direction: column
+					transform: translateY(-50%)
+					width: 40px 
+					height: 17px      
+					span
+						height: 3px
+						width: 100%
+						background-color: $white_color 
+						transition: 0.5s all
+						&:nth-child(2)
+							margin: 4px 0              
+					&_active
+						span 
+							margin-top: -4px               
+							&:nth-child(1)
+								margin-top: 2px
+								transform: translateY(3px) rotate(-45deg)                    
+							&:nth-child(2)
+								display: none                                             
+							&:nth-child(3)
+								margin-top: -2px
+								transform: translateY(3px) rotate(45deg)
+
+	.reasons 
+		.row            
+		&_block
+			flex-direction: column
+			justify-content: flex-start
+			&_description
+				width: $width_324-322
+				padding: 10px 0 40px 0
+
+	.application
+		.row
+			min-height: 900px
+
+	.footer
+		.row
+		&_icon_wrapper_large
+			display: none
+		&_list_wrapper
+			&_divider
+				width: 50%
+			&_ul1 
+				width: 90%  
+				&_menu
+					&_item
+						width: 100%
+			&_ul2
+				width: 90%     
+				&_menu
+					&_item
+						width: 100% 
+			&_language_link
+				width: 100%	
+		&_icon_wrapper_small 
+			display: flex
+			justify-content: space-evenly
+			margin-top: 20px
+			&_square
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 38px
+				height: 38px
+				background: rgb(7, 7, 22)
+				border-radius: 20px    
+				&:hover
+					background: $blue_color 
+				&_img
+					display: flex   					        
+		&_link_wrapper
+			justify-content: space-evenly
+			margin-top: 20px
+			&_block
+				&_link
+					&_img
+						width: 100% 	
+
+
+@media (max-width: 767.98px)
+
+	.promo
+		&_header
+			.row 
+			&_block_logo  
+				width: 60% 
+			.xs-hidden
+				display: none		
+			&_block_button
+				width: 40%
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+				&_phone
+					color: $white_color
+					font-size: $font-size_22-19
+					font-weight: 400
+					line-height: 26px
+					text-decoration: none
+				.xs-visible
+					display: flex 		
+				&_btn
+					height: 32px 
+
+	.reasons
+		.row            
+		&_block
+			flex-direction: column
+			justify-content: flex-start
+			&_description
+				width: $width_492-482
+				padding: 10px 0 40px 0
+
+	.application 
+		.row
+			min-height: 710px
+		&_card
+			&_order
+				height: 220px
+			&_reliable_service
+				height: 220px
+			&_prices
+				height: 220px
+			&_cashless_payment
+				height: 220px
+			&_feedback
+				height: 220px
+			&_divider_cost
+				height: 220px          
+
+	.conditions
+		.row
+			min-height: 1000px 
+
+
+@media (max-width: 575.98px)
+	
+	.promo
+		&_header
+			.row 
+			&_block_logo
+				&_official_text
+					font-size: $font-size_14-12_2
+
+	.reasons 
+		.row            
+		&_block
+			flex-direction: column
+			justify-content: flex-start                   
+			&_description
+				width: $width_528-272
+				padding: 10px 0 40px 0
+
+	.application 
+		.row
+			min-height: 1880px
+		&_card
+			&_order
+				height: 280px
+			&_reliable_service
+				height: 280px
+			&_prices
+				height: 280px
+			&_cashless_payment
+				height: 280px
+			&_feedback
+				height: 280px
+			&_divider_cost
+				height: 280px 
+
+@media (max-width: 455.58px)
+	.promo
+		&_header
+			padding: 10px 0 10px 0
+			.row
+			&_block_logo 
+				width: 100%
+			&_block_button	
+				width: 100%	
+				flex-direction: row
+				justify-content: space-between	
+				align-items: center	
+
+	.footer
+		.row
+		&_list_wrapper
+			&_divider
+				width: 70%
+			&_ul1 
+				width: 100%  
+				&_menu
+					&_item
+						width: 100%
+			&_ul2
+				width: 100%     
+				&_menu
+					&_item
+						width: 100%   
+			&_language_link
+				width: 100%	
+		&_icon_wrapper_small 
+			display: flex
+			justify-content: space-evenly
+			margin-top: 20px
+			&_square
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 38px
+				height: 38px
+				background: rgb(7, 7, 22)
+				border-radius: 20px    
+				&:hover
+					background: $blue_color 
+				&_img
+					display: flex   					        
+		&_link_wrapper
+			justify-content: space-evenly
+			margin-top: 20px
+			&_block
+				&_link
+					&_img
+						width: 100% 				
