@@ -1,149 +1,150 @@
-.header
-	display: flex
-	justify-content: center
-	align-items: center
-	height: 50px
-	background: rgba(0, 0, 0, 0.77)
-	position: sticky
-	top: 0
-	&_nav
-		&_menu
-			display: flex
-			justify-content: center
-			align-items: center
-			padding-left: 0
-			margin-bottom: 0
-			list-style-type: none
-			&_item
+.header_promo
+	min-height: 100vh
+	background-image: url('/img/header/uber_bg.png') 
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+	.header
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 50px
+		background: rgba(0, 0, 0, 0.77)
+		position: sticky
+		top: 0
+		&_nav
+			&_menu
 				display: flex
 				justify-content: center
 				align-items: center
-				width: 100%
-				border-right: 2px dotted $black_color
-				&:last-child    
-					border-right: none
-				&_link          
-					font-weight: 300
-					font-size: 15px
+				padding-left: 0
+				margin-bottom: 0
+				list-style-type: none
+				&_item
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					border-right: 2px dotted $black_color
+					&:last-child    
+						border-right: none
+					&_link          
+						font-weight: 300
+						font-size: 15px
+						color: $white_color
+						text-decoration: none
+						&:hover
+							text-decoration: underline
+							color: $blue_color
+			&_block				
+				&_hamburger
+					display: none      
+
+	.promo
+		&_header
+			display: flex
+			flex-direction: column
+			justify-content: center
+			min-height: 84px
+			background: rgba(0, 0, 0, 0.6)
+			.row
+			&_block_logo 
+				display: flex
+				flex-direction: column
+				justify-content: space-evenly
+				&_img
+					img
+						width: 100%
+				&_official_text
+					color: rgba(255, 255, 255, 0.5)
+					font-size: 13px
+					font-weight: 400
+			&_block_call
+				display: flex
+				flex-direction: column
+				justify-content: space-evenly
+				&_text
 					color: $white_color
+					font-size: 13px
+					font-weight: normal
+					line-height: 26px
+					text-align: right
+				&_phone
+					color: $white_color
+					font-size: 22px
+					font-weight: 400
+					text-align: right
+					line-height: 26px
 					text-decoration: none
 					&:hover
 						text-decoration: underline
 						color: $blue_color
-		&_block				
-			&_hamburger
-				display: none      
-
-.promo
-	min-height: 800px
-	background-image: url('../img/header/uber_bg.jpg') 
-	background-position: center center
-	background-size: cover
-	background-repeat: no-repeat
-	&_header
-		display: flex
-		flex-direction: column
-		justify-content: center
-		min-height: 84px
-		background: rgba(0, 0, 0, 0.6)
+			&_block_button		
+				display: flex
+				flex-direction: column
+				justify-content: center
+				.xs-visible
+					display: none  
+				&_btn
+					width: 172px
+					height: 50px
+					box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+					border-radius: 4px
+					background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
+					color: $white_color
+					text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+					font-size: 14px
+					font-weight: 400
+					text-transform: uppercase
+					+btn_hover				
 		.row
-		&_block_logo 
+		.box
 			display: flex
 			flex-direction: column
-			justify-content: space-evenly
-			&_img
-				img
-					width: 100%
-			&_official_text
-				color: rgba(255, 255, 255, 0.5)
-				font-size: 13px
-				font-weight: 400
-		&_block_call
+			justify-content: space-evenly	
+			padding-top: 30px
+		&_block
 			display: flex
 			flex-direction: column
-			justify-content: space-evenly
-			&_text
-				color: $white_color
-				font-size: 13px
-				font-weight: normal
-				line-height: 26px
-				text-align: right
-			&_phone
-				color: $white_color
-				font-size: 22px
-				font-weight: 400
-				text-align: right
-				line-height: 26px
-				text-decoration: none
-				&:hover
-					text-decoration: underline
-					color: $blue_color
-		&_block_button		
-			display: flex
-			flex-direction: column
-			justify-content: center
-			.xs-visible
-				display: none  
-			&_btn
-				width: 172px
-				height: 50px
-				box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
-				border-radius: 4px
-				background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
-				color: $white_color
-				text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-				font-size: 14px
-				font-weight: 400
+			justify-content: space-evenly		
+			min-height: 716px			      
+			&_subheader1
+				font-size: 60px
+				font-weight: 700
+				text-align: center
 				text-transform: uppercase
-				+btn_hover				
-	.row
-	.box
-		display: flex
-		flex-direction: column
-		justify-content: space-evenly	
-		padding-top: 30px
-	&_block
-		display: flex
-		flex-direction: column
-		justify-content: space-evenly		
-		min-height: 716px			      
-		&_subheader1
-			font-size: 60px
-			font-weight: 700
-			text-align: center
-			text-transform: uppercase
-			color: $white_color
-			line-height: 60px
-		&_subheader2
-			font-size: 36px
-			text-align: center
-			text-transform: uppercase
-			color: $white_color
-			line-height: 36px
-		&_subheader_description
-			font-weight: 400
-			font-size: 18px
-			text-align: center
-			color: $white_color
-		&_btn
-			display: flex
-			justify-content: center
-			align-items: center
-			height: 240px
-			&_button
+				color: $white_color
+				line-height: 60px
+			&_subheader2
+				font-size: 36px
+				text-align: center
+				text-transform: uppercase
+				color: $white_color
+				line-height: 36px
+			&_subheader_description
+				font-weight: 400
+				font-size: 18px
+				text-align: center
+				color: $white_color
+			&_btn
 				display: flex
 				justify-content: center
 				align-items: center
-				width: 260px
-				height: 64px
-				background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
-				box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
-				border-radius: 4px
-				font-weight: 400
-				font-size: 18px
-				color: $white_color
-				text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-				+btn_hover
+				height: 240px
+				&_button
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 260px
+					height: 64px
+					background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
+					box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+					border-radius: 4px
+					font-weight: 400
+					font-size: 18px
+					color: $white_color
+					text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+					+btn_hover
 
 .reasons
 	min-height: 908px

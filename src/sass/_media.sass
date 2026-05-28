@@ -1,49 +1,50 @@
 @media (max-width: 1920px)
-	.header
-		&_nav
-			&_menu
-				&_item
-					&_link 
-						font-size: $font-size_15-12
+	.header_promo
+		.header
+			&_nav
+				&_menu
+					&_item
+						&_link 
+							font-size: $font-size_15-12
 
-	.promo
-		min-height: $height_800-500
-		&_header
-			min-height: 84px
+		.promo
+			min-height: $height_800-500
+			&_header
+				min-height: 84px
+				.row
+				&_block_logo 
+					&_img
+						img
+							width: 100%
+					&_official_text
+						font-size: $font-size_13-12
+				&_block_call
+					&_text
+						font-size: $font-size_13-12
+					&_phone
+						font-size: $font-size_22-21
+				&_block_button		
+					&_btn
+						width: $width_172-140
+						font-size: $font-size_14-12
 			.row
-			&_block_logo 
-				&_img
-					img
-						width: 100%
-				&_official_text
-					font-size: $font-size_13-12
-			&_block_call
-				&_text
-					font-size: $font-size_13-12
-				&_phone
-					font-size: $font-size_22-21
-			&_block_button		
-				&_btn
-					width: $width_172-140
-					font-size: $font-size_14-12
-		.row
-		.box	
-		&_block
-			min-height: $height_716-416	
-			&_subheader1
-				font-size: $font-size_60-32
-				line-height: $line-height_60-40
-			&_subheader2
-				font-size: $font-size_36-20
-				line-height: $line-height_36-24
-			&_subheader_description
-				font-size: $font-size_18-13
-			&_btn
-				height: $height_240-120
-				&_button
-					width: $width_260-190
-					height: $height_64-50
+			.box	
+			&_block
+				min-height: $height_716-416	
+				&_subheader1
+					font-size: $font-size_60-32
+					line-height: $line-height_60-40
+				&_subheader2
+					font-size: $font-size_36-20
+					line-height: $line-height_36-24
+				&_subheader_description
 					font-size: $font-size_18-13
+				&_btn
+					height: $height_240-120
+					&_button
+						width: $width_260-190
+						height: $height_64-50
+						font-size: $font-size_18-13
 
 	.reasons
 		&_header
@@ -210,67 +211,67 @@
 			min-height: 1100px 
 
 @media (max-width: 991.98px)    
-
-	.header
-		&_nav
-			&_menu
-				position: fixed
-				flex-direction: column
-				justify-content: space-evenly
-				top: 0
-				left: -100%
-				width: 50%
-				height: 100vh    
-				padding: 20px 15px
-				background: rgba(0, 0, 0, 0.77)
-				transition: 0.6s all
-				&_active
-					left: 0            
-				&_item
-					border-right: none
-					padding: 0 
-					&_link
-						font-size: $font-size_24-18
-						text-align: center
-			&_block	
-				display: flex				
-				justify-content: flex-end
-				align-items: center
-				padding-top: 16px	
-				padding-right: 2px							
-				&_hamburger
-					display: flex
+	.header_promo
+		.header
+			&_nav
+				&_menu
+					position: fixed
 					flex-direction: column
-					transform: translateY(-50%)
-					width: 40px 
-					height: 17px      
-					span
-						height: 3px
-						width: 100%
-						background-color: $white_color 
-						transition: 0.5s all
-						&:nth-child(2)
-							margin: 4px 0              
+					justify-content: space-evenly
+					top: 0
+					left: -100%
+					width: 50%
+					height: 100vh    
+					padding: 20px 15px
+					background: rgba(0, 0, 0, 0.77)
+					transition: 0.6s all
 					&_active
-						span 
-							margin-top: -4px               
-							&:nth-child(1)
-								margin-top: 2px
-								transform: translateY(3px) rotate(-45deg)                    
+						left: 0            
+					&_item
+						border-right: none
+						padding: 0 
+						&_link
+							font-size: $font-size_24-18
+							text-align: center
+				&_block	
+					display: flex				
+					justify-content: flex-end
+					align-items: center
+					padding-top: 16px	
+					padding-right: 2px							
+					&_hamburger
+						display: flex
+						flex-direction: column
+						transform: translateY(-50%)
+						width: 40px 
+						height: 17px      
+						span
+							height: 3px
+							width: 100%
+							background-color: $white_color 
+							transition: 0.5s all
 							&:nth-child(2)
-								display: none                                             
-							&:nth-child(3)
-								margin-top: -2px
-								transform: translateY(3px) rotate(45deg)
+								margin: 4px 0              
+						&_active
+							span 
+								margin-top: -4px               
+								&:nth-child(1)
+									margin-top: 2px
+									transform: translateY(3px) rotate(-45deg)                    
+								&:nth-child(2)
+									display: none                                             
+								&:nth-child(3)
+									margin-top: -2px
+									transform: translateY(3px) rotate(45deg)
 
-	.promo
-		&_header
-			.row
-			&_block_button
-				display: flex
-				flex-direction: row
-				justify-content: flex-end
-				align-content: center									
+		.promo
+			&_header
+				.row
+				&_block_button
+					display: flex
+					flex-direction: row
+					justify-content: flex-end
+					align-content: center									
 
 	.reasons 
 		.row            
@@ -330,32 +331,32 @@
 
 
 @media (max-width: 767.98px)
-
-	.promo
-		&_header
-			.row 
-			&_block_logo  
-				width: 60% 
-			.xs-hidden
-				display: none		
-			&_block_button
-				width: 40%
-				display: flex
-				flex-direction: column
-				align-items: flex-end
-				&_phone
-					color: $white_color
-					font-size: $font-size_22-19
-					font-weight: 400
-					line-height: 26px
-					text-decoration: none
-					&:hover
-						text-decoration: underline
-						color: $blue_color
-				.xs-visible
-					display: flex 		
-				&_btn
-					height: 32px 
+	.header_promo
+		.promo
+			&_header
+				.row 
+				&_block_logo  
+					width: 60% 
+				.xs-hidden
+					display: none		
+				&_block_button
+					width: 40%
+					display: flex
+					flex-direction: column
+					align-items: flex-end
+					&_phone
+						color: $white_color
+						font-size: $font-size_22-19
+						font-weight: 400
+						line-height: 26px
+						text-decoration: none
+						&:hover
+							text-decoration: underline
+							color: $blue_color
+					.xs-visible
+						display: flex 		
+					&_btn
+						height: 32px 
 
 	.reasons
 		.row            
@@ -389,13 +390,13 @@
 
 
 @media (max-width: 575.98px)
-	
-	.promo
-		&_header
-			.row 
-			&_block_logo
-				&_official_text
-					font-size: $font-size_14-12_2
+	.header_promo
+		.promo
+			&_header
+				.row 
+				&_block_logo
+					&_official_text
+						font-size: $font-size_14-12_2
 
 	.reasons 
 		.row            
@@ -424,17 +425,18 @@
 				height: 280px 
 
 @media (max-width: 455.98px)
-	.promo
-		&_header
-			padding: 10px 0 10px 0
-			.row
-			&_block_logo 
-				width: 100%
-			&_block_button	
-				width: 100%	
-				flex-direction: row
-				justify-content: space-between	
-				align-items: center	
+	.header_promo
+		.promo
+			&_header
+				padding: 10px 0 10px 0
+				.row
+				&_block_logo 
+					width: 100%
+				&_block_button	
+					width: 100%	
+					flex-direction: row
+					justify-content: space-between	
+					align-items: center	
 
 	.footer
 		.row
@@ -478,9 +480,9 @@
 						width: 100% 				
 
 @media (max-width: 319.98px)						
-	
-	.header,
-	.promo,
+	.header_promo,
+	// .header,
+	// .promo,
 	.reasons,
 	.application,
 	.choice,
